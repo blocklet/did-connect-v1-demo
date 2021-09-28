@@ -10,7 +10,7 @@ echo "SKIP_PREFLIGHT_CHECK=true" > .env
 npm run bundle
 
 echo "publishing to blocklet registry..."
-blocklet config registry ${BLOCKLET_REGISTRY}
-blocklet publish --developer-sk ${BLOCKLET_REGISTRY_SK}
+blocklet config registry ${STAGING_REGISTRY}
+blocklet publish --developer-sk ${ABTNODE_DEV_STAGING_SK}
 
 make release

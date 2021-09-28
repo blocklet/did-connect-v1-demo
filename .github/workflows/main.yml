@@ -21,8 +21,8 @@ jobs:
       - name: Deploy
         env:
           GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
-          BLOCKLET_REGISTRY: ${{ secrets.BLOCKLET_REGISTRY }}
-          BLOCKLET_REGISTRY_SK: ${{ secrets.ABTNODE_DEV_SK }}
+          STAGING_REGISTRY: ${{ secrets.STAGING_REGISTRY }}
+          ABTNODE_DEV_STAGING_SK: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
         run: bash ./tools/publish.sh
 
       - name: Release to Github

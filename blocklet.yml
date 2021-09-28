@@ -1,4 +1,5 @@
 name: connect-demo
+version: 1.0.0
 title: connect-demo
 description: An ABT Node blocklet
 keywords:
@@ -12,9 +13,8 @@ author:
   email: zhanghan@arcblock.io
 repository:
   type: git
-  url: git+https://github.com/blocklet/create-blocklet.git
+  url: 'git+https://github.com/blocklet/create-blocklet.git'
 specVersion: 1.1.1
-version: 0.1.0
 logo: logo.png
 files:
   - build
@@ -59,8 +59,9 @@ environments:
   - name: CHAIN_HOST
     description: What's endpoint of the chain?
     required: true
-    default: https://beta.abtnetwork.io/api/
+    default: 'https://beta.abtnetwork.io/api/'
     secure: false
-capabilities: {}
+capabilities:
+  clusterMode: false
 screenshots: []
 children: []
