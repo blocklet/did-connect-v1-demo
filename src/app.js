@@ -7,6 +7,9 @@ import './app.css';
 import Home from './pages/home';
 import About from './pages/about';
 
+// While the blocklet is deploy to a sub path, this will be work properly.
+const apiPrefix = window?.blocklet?.prefix || '/';
+
 function App() {
   return (
     <div className="app">
@@ -23,12 +26,9 @@ function App() {
 const WrappedApp = withRouter(App);
 
 export default () => {
-  // While the blocklet is deploy to a sub path, this will be work properly.
-  const basename = window?.blocklet?.prefix || '/';
-
   return (
-    <SessionProvider>
-      <Router basename={basename}>
+    <SessionProvider serviceHost={apiPrefix}>
+      <Router basename={apiPrefix}>
         <WrappedApp />
       </Router>
     </SessionProvider>

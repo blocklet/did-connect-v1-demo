@@ -12,7 +12,6 @@ This blocklet is a dapp project, which means this is a full-stack application. I
 
 - public/ - static files
   - favicon.ico - favicon
-  - favicon.svg - favicon
   - index.html - main html file, template for react
 - screenshots/ - Screenshots
 - server/ - Server side code
