@@ -6,7 +6,7 @@ This blocklet is a dapp project, which means this is a full-stack application. I
 
 ## Install on my ABT Node
 
-[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fconnect-demo%2Freleases%2Fdownload%2F1.0.1%2Fblocklet.json)
+[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fconnect-demo%2Freleases%2Fdownload%2F1.0.2%2Fblocklet.json)
 
 ## File Structure
 
