@@ -1,7 +1,7 @@
 name: connect-demo
-version: 1.0.1
+version: 1.0.2
 title: connect-demo
-description: An ABT Node blocklet
+description: Blocklet that demos capabilities of DID Connect
 keywords:
   - blocklet
   - react
