@@ -1,4 +1,4 @@
-name: Deploy
+name: Blocklet workflow
 
 on:
   push:
@@ -15,17 +15,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Set yarn cache
+        uses: c-hive/gha-yarn-cache@v2
+
       - name: Init
         run: make github-init
 
-      - name: Deploy
-        env:
-          GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
-          STAGING_REGISTRY: ${{ secrets.STAGING_REGISTRY }}
-          ABTNODE_DEV_STAGING_SK: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
-        run: bash ./tools/publish.sh
-
-      - name: Release to Github
-        uses: blocklet/action-release-to-github@v1.0.0
+      - name: Blocklet workflow
+        uses: blocklet/action-workflow@v0.2.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          bundle-command: yarn bundle
+          skip-upload: false
+          registry-endpoint: ${{ secrets.STAGING_REGISTRY }}
+          developer-sk: ${{ secrets.ABTNODE_DEV_STAGING_SK }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}

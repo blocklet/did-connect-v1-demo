@@ -2,7 +2,7 @@
 
 dep:
 	@echo "Install dependencies required for this repo..."
-	@npm install
+	@yarn
 
 test:
 	@echo "Running test suites..."
@@ -12,9 +12,14 @@ build:
 
 bundle:
 	@echo "Bundling the software..."
-	@npm run bundle
+	@yarn bundle
+
+setenv:
+	@echo "Setup .env file..."
+	@echo "SKIP_PREFLIGHT_CHECK=true" > .env
 
 github-init:
+	@make setenv
 	@make dep
 
 include .makefiles/*.mk
