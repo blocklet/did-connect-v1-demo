@@ -57,18 +57,18 @@
     lodash.get "^4.4.2"
     semver "^7.3.4"
 
-"@arcblock/did-connect@^1.14.53":
-  version "1.14.53"
-  resolved "https://registry.npmjs.org/@arcblock/did-connect/-/did-connect-1.14.53.tgz#76cc182ae1f33ec7430451a81f3bbeed922d9eae"
-  integrity sha512-+nrZ8n9PJFNFjiGNCSs7kse6NOK4fHORc9vNrc8rvihbswMOITS673sE3N3y79TAK+8q9CMjS/bxA4En3FIATg==
+"@arcblock/did-connect@^1.14.60":
+  version "1.14.60"
+  resolved "https://registry.npmjs.org/@arcblock/did-connect/-/did-connect-1.14.60.tgz#57c392b9cded630411fa3fcfba850449f50c9288"
+  integrity sha512-xfgyr/tsXBWrO6iozkBI+4/i3RNdFtS6oMhwqV8Tx9hIt6N5xlGy+oWHCPGohErJOIkzxfgQWvewLdsJy+KASA==
   dependencies:
     "@arcblock/event-client" "^1.0.23"
-    "@arcblock/icons" "^1.14.53"
-    "@arcblock/react-hooks" "^1.14.53"
-    "@arcblock/ux" "^1.14.53"
+    "@arcblock/icons" "^1.14.60"
+    "@arcblock/react-hooks" "^1.14.60"
+    "@arcblock/ux" "^1.14.60"
     "@fontsource/rubik" "^4.5.0"
     "@fontsource/ubuntu-mono" "^4.4.5"
-    "@material-ui/core" "^4.10.1"
+    "@material-ui/core" "^4.12.3"
     axios "^0.21.1"
     core-js "^3.6.4"
     dsbridge "3.1.4"
@@ -132,10 +132,10 @@
     wolfy87-eventemitter "^5.2.5"
     ws "^7.2.0"
 
-"@arcblock/icons@^1.14.53":
-  version "1.14.53"
-  resolved "https://registry.npmjs.org/@arcblock/icons/-/icons-1.14.53.tgz#ae3e53fbe6e7d3478c5374f8830f1d86cb71031b"
-  integrity sha512-tU6qDJ/QKJQr+sEMxLSuwIhJ7lnltGjRxVreu1sLGHtcyoqbpY6VRMW5mtxNmfOfEaiGlWH2sJyh2jSPCbtRxA==
+"@arcblock/icons@^1.14.60":
+  version "1.14.60"
+  resolved "https://registry.npmjs.org/@arcblock/icons/-/icons-1.14.60.tgz#d1fa7e159d809aad2e7b24b7502d47a784e86cc6"
+  integrity sha512-0STpm2KjYICndA96uj4IvbOyK0Qe+IUmbmRfkuzrESiHugtNsDuq3bJcV5GFd8mXQyyGOaMpkIOkqBRHsDK9iw==
 
 "@arcblock/nft@^1.13.21":
   version "1.13.21"
@@ -153,10 +153,10 @@
     pako "^1.0.11"
     url-join "^4.0.1"
 
-"@arcblock/react-hooks@^1.14.53":
-  version "1.14.53"
-  resolved "https://registry.npmjs.org/@arcblock/react-hooks/-/react-hooks-1.14.53.tgz#6058fcd1f79eb3e0a7641f1adfbc78c52ba7a61e"
-  integrity sha512-PoQtJGLC8wepZ/+YiYHMCLTdDM0ZjuUlYRy2bdfoOIJPrsNwdBLvW/+UHHxfJyMeXvozkT35Of1bf2ZYV9EY9A==
+"@arcblock/react-hooks@^1.14.60":
+  version "1.14.60"
+  resolved "https://registry.npmjs.org/@arcblock/react-hooks/-/react-hooks-1.14.60.tgz#dd4e64ea0e85902c17b0d874033beca3f68b7795"
+  integrity sha512-ActYaqS8MwU0h7G2InT2xxGzCxY8dLmARcUHxkEl1QzarIi7Dj4WXEAyi7UkEzLl+JkYdZr/mNl2QC0TvvVvcQ==
   dependencies:
     core-js "^3.6.4"
     event-target-shim "^5.0.1"
@@ -173,16 +173,16 @@
     lodash.get "^4.4.2"
     lodash.set "^4.3.2"
 
-"@arcblock/ux@^1.14.53":
-  version "1.14.53"
-  resolved "https://registry.npmjs.org/@arcblock/ux/-/ux-1.14.53.tgz#e420740470d25a3b620019bf9e1df7604f7a210d"
-  integrity sha512-sUx00iVnK4PwV2ZFFOPjz86Le/aUgnyKEQlyfeKWeH7ePfBqeWb7bb71cTBBHlHccRaft5Ps8oyztYnObCz36A==
+"@arcblock/ux@^1.14.60":
+  version "1.14.60"
+  resolved "https://registry.npmjs.org/@arcblock/ux/-/ux-1.14.60.tgz#2ecadb603ad1619f26b6f7ac8e6009d82602e5c5"
+  integrity sha512-hZP+YIJ7pQKbZunI7y3BCaM+G7QDIEsTPSsgpRZqBM+78DHFhjI58Avh70GzoCgKQEU11w7RXcB0hPFDl9/IwQ==
   dependencies:
-    "@arcblock/icons" "^1.14.53"
-    "@arcblock/react-hooks" "^1.14.53"
+    "@arcblock/icons" "^1.14.60"
+    "@arcblock/react-hooks" "^1.14.60"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
-    "@material-ui/core" "^4.10.1"
-    "@material-ui/icons" "4.5.1"
+    "@material-ui/core" "^4.12.3"
+    "@material-ui/icons" "4.11.2"
     axios "^0.21.1"
     base64-url "^2.3.3"
     copy-to-clipboard "^3.2.0"
@@ -1807,7 +1807,7 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@material-ui/core@^4.10.1":
+"@material-ui/core@^4.12.3":
   version "4.12.3"
   resolved "https://registry.npmjs.org/@material-ui/core/-/core-4.12.3.tgz#80d665caf0f1f034e52355c5450c0e38b099d3ca"
   integrity sha512-sdpgI/PL56QVsEJldwEe4FFaFTLUqN+rd7sSZiRCdx2E/C7z5yK0y/khAWVBH24tXwto7I1hCzNWfJGZIYJKnw==
@@ -1825,10 +1825,10 @@
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
 
-"@material-ui/icons@4.5.1":
-  version "4.5.1"
-  resolved "https://registry.npmjs.org/@material-ui/icons/-/icons-4.5.1.tgz#6963bad139e938702ece85ca43067688018f04f8"
-  integrity sha512-YZ/BgJbXX4a0gOuKWb30mBaHaoXRqPanlePam83JQPZ/y4kl+3aW0Wv9tlR70hB5EGAkEJGW5m4ktJwMgxQAeA==
+"@material-ui/icons@4.11.2":
+  version "4.11.2"
+  resolved "https://registry.npmjs.org/@material-ui/icons/-/icons-4.11.2.tgz#b3a7353266519cd743b6461ae9fdfcb1b25eb4c5"
+  integrity sha512-fQNsKX2TxBmqIGJCSi3tGTO/gZ+eJgWmMJkgDiOfyNaunNaxcklJQFaFogYcFl0qFuaEz1qaXYXboa/bUXVSOQ==
   dependencies:
     "@babel/runtime" "^7.4.4"
 

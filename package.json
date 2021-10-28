@@ -1,6 +1,6 @@
 {
   "name": "connect-demo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -31,8 +31,8 @@
   "dependencies": {
     "@arcblock/did-auth": "latest",
     "@arcblock/did-auth-storage-nedb": "latest",
-    "@arcblock/did-connect": "^1.14.53",
-    "@arcblock/ux": "^1.14.53",
+    "@arcblock/did-connect": "^1.14.60",
+    "@arcblock/ux": "^1.14.60",
     "@blocklet/sdk": "latest",
     "@ocap/client": "latest",
     "@ocap/mcrypto": "latest",

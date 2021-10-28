@@ -1,3 +1,7 @@
+## 1.0.4 (October 28, 2021)
+
+chore: bump deps to latest
+
 ## 1.0.3 (十月 14, 2021)
 
 - chore: use action-workflow
