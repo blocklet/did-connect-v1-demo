@@ -32,57 +32,48 @@ const Home = () => {
           no auto connect
         </Button>
       </div>
-      {connect1 && (
-        <DidConnect
-          popup
-          open={connect1}
-          action="connect"
-          checkFn={api.get}
-          onClose={() => setConnect1(false)}
-          onSuccess={() => setConnect1(false)}
-          webWalletUrl="https://web.abtwallet.io"
-          messages={{
-            title: 'Connect (Current Session)',
-            scan: 'This connection should be auto connected',
-            confirm: 'confirm',
-            success: 'success',
-          }}
-        />
-      )}
-      {connect2 && (
-        <DidConnect
-          popup
-          open={connect2}
-          action="connect-only"
-          checkFn={api.get}
-          onClose={() => setConnect2(false)}
-          onSuccess={() => setConnect2(false)}
-          webWalletUrl="https://web.abtwallet.io"
-          messages={{
-            title: 'Connect (Current Session)',
-            scan: 'This connection should be auto connected',
-            confirm: 'confirm',
-            success: 'success',
-          }}
-        />
-      )}
-      {connect3 && (
-        <DidConnect
-          popup
-          open={connect3}
-          action="no-connect"
-          checkFn={api.get}
-          onClose={() => setConnect3(false)}
-          onSuccess={() => setConnect3(false)}
-          webWalletUrl="https://web.abtwallet.io"
-          messages={{
-            title: 'Connect (Any Wallet)',
-            scan: 'Use any wallet to scan',
-            confirm: 'confirm',
-            success: 'success',
-          }}
-        />
-      )}
+      <DidConnect
+        popup
+        open={connect1}
+        action="connect"
+        checkFn={api.get}
+        onClose={() => setConnect1(false)}
+        onSuccess={() => setConnect1(false)}
+        messages={{
+          title: 'Connect (Current Session)',
+          scan: 'This connection should be auto connected',
+          confirm: 'confirm',
+          success: 'success',
+        }}
+      />
+      <DidConnect
+        popup
+        open={connect2}
+        action="connect-only"
+        checkFn={api.get}
+        onClose={() => setConnect2(false)}
+        onSuccess={() => setConnect2(false)}
+        messages={{
+          title: 'Connect (Current Session)',
+          scan: 'This connection should be auto connected',
+          confirm: 'confirm',
+          success: 'success',
+        }}
+      />
+      <DidConnect
+        popup
+        open={connect3}
+        action="no-connect"
+        checkFn={api.get}
+        onClose={() => setConnect3(false)}
+        onSuccess={() => setConnect3(false)}
+        messages={{
+          title: 'Connect (Any Wallet)',
+          scan: 'Use any wallet to scan',
+          confirm: 'confirm',
+          success: 'success',
+        }}
+      />
     </div>
   );
 };
