@@ -1,6 +1,6 @@
 {
   "name": "connect-demo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,14 +29,14 @@
     ]
   },
   "dependencies": {
-    "@arcblock/did-auth": "^1.13.55",
+    "@arcblock/did-auth": "^1.13.60",
     "@arcblock/did-auth-storage-nedb": "^1.6.3",
-    "@arcblock/did-connect": "^1.15.1",
-    "@arcblock/ux": "^1.15.1",
-    "@blocklet/sdk": "^1.5.10",
-    "@ocap/client": "^1.13.55",
-    "@ocap/mcrypto": "^1.13.55",
-    "@ocap/wallet": "^1.13.55",
+    "@arcblock/did-connect": "^1.15.7",
+    "@arcblock/ux": "^1.15.7",
+    "@blocklet/sdk": "^1.5.14",
+    "@ocap/client": "^1.13.60",
+    "@ocap/mcrypto": "^1.13.60",
+    "@ocap/wallet": "^1.13.60",
     "axios": "^0.21.1",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
