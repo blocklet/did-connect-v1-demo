@@ -1,6 +1,6 @@
 {
   "name": "connect-demo",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "scripts": {
     "build": "react-scripts build",
     "test": "react-scripts test",
