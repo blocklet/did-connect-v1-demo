@@ -1,3 +1,7 @@
+## 1.0.11 (April 20, 2022)
+
+- chore: update deps to latest
+
 ## 1.0.10 (December 28, 2021)
 
 - docs: update docs (abtnode rebranding)
