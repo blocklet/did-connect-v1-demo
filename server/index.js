@@ -56,6 +56,18 @@ noConnectHandlers.attach({
   onAuth: async () => {},
 });
 
+noConnectHandlers.attach({
+  app,
+  action: 'get-data',
+  claims: {
+    profile: () => ({
+      fields: ['fullName'],
+      description: 'abc',
+    }),
+  },
+  onAuth: async () => {},
+});
+
 const router = express.Router();
 router.use('/api', require('./routes'));
 

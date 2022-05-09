@@ -11,6 +11,7 @@ const Home = () => {
   const [connect1, setConnect1] = useState(false);
   const [connect2, setConnect2] = useState(false);
   const [connect3, setConnect3] = useState(false);
+  const [connect4, setConnect4] = useState(false);
   const { session } = useSessionContext();
 
   return (
@@ -30,6 +31,11 @@ const Home = () => {
       <div style={{ marginTop: 16 }}>
         <Button variant="outlined" color="primary" onClick={() => setConnect3(true)}>
           no auto connect
+        </Button>
+      </div>
+      <div style={{ marginTop: 16 }}>
+        <Button variant="outlined" color="primary" onClick={() => setConnect4(true)}>
+          get data
         </Button>
       </div>
       <DidConnect
@@ -70,6 +76,20 @@ const Home = () => {
         messages={{
           title: 'Connect (Any Wallet)',
           scan: 'Use any wallet to scan',
+          confirm: 'confirm',
+          success: 'success',
+        }}
+      />
+      <DidConnect
+        popup
+        open={connect4}
+        action="get-data"
+        checkFn={api.get}
+        onClose={() => setConnect4(false)}
+        onSuccess={() => setConnect4(false)}
+        messages={{
+          title: 'Get Data',
+          scan: 'Get the data returned by the wallet scan',
           confirm: 'confirm',
           success: 'success',
         }}
