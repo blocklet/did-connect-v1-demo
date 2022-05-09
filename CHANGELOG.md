@@ -1,3 +1,9 @@
+## 1.0.12 (五月 09, 2022)
+
+- feat: add version-check and template
+- feat: add usage of update session and onconnect (#18)
+- [skip ci] Update README.md
+
 ## 1.0.11 (April 20, 2022)
 
 - chore: update deps to latest
