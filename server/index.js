@@ -65,7 +65,13 @@ noConnectHandlers.attach({
       description: 'abc',
     }),
   },
-  onAuth: async () => {},
+  onAuth: async ({ updateSession }) => {
+    updateSession({
+      thisIsCustomData: {
+        sesc: 'Customizable key and value',
+      },
+    });
+  },
 });
 
 const router = express.Router();

@@ -14,6 +14,11 @@ const Home = () => {
   const [connect4, setConnect4] = useState(false);
   const { session } = useSessionContext();
 
+  const getResponseData = (data) => {
+    // eslint-disable-next-line no-console
+    console.log('response data => ', data, data.thisIsCustomData);
+  };
+
   return (
     <div className="app-header">
       <SessionManager session={session} onLogout={() => window.location.reload()} />
@@ -86,7 +91,7 @@ const Home = () => {
         action="get-data"
         checkFn={api.get}
         onClose={() => setConnect4(false)}
-        onSuccess={() => setConnect4(false)}
+        onSuccess={getResponseData}
         messages={{
           title: 'Get Data',
           scan: 'Get the data returned by the wallet scan',
