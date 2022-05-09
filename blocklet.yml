@@ -1,5 +1,5 @@
 name: connect-demo
-version: 1.0.11
+version: 1.0.12
 title: connect-demo
 description: Blocklet that demos capabilities of DID Connect
 keywords:
@@ -13,7 +13,7 @@ author:
   email: zhanghan@arcblock.io
 repository:
   type: git
-  url: 'git+https://github.com/blocklet/create-blocklet.git'
+  url: git+https://github.com/blocklet/create-blocklet.git
 specVersion: 1.2.4
 logo: logo.png
 files:
@@ -59,7 +59,7 @@ environments:
   - name: CHAIN_HOST
     description: What's endpoint of the chain?
     required: true
-    default: 'https://beta.abtnetwork.io/api/'
+    default: https://beta.abtnetwork.io/api/
     secure: false
     shared: true
 capabilities:
