@@ -23,6 +23,11 @@
   resolved "https://registry.yarnpkg.com/@abtnode/constant/-/constant-1.7.7.tgz#eab9c5e4c3d7769ac2fdfe6c7091df6c7123b214"
   integrity sha512-1mdyjfq9Dl4naigfjbKmxtsDrmC07zzvQFGYICC8bTzUR2npcLSUlLwdjJ+tDyzFM552Z0V84WMtfRryiw/u3g==
 
+"@abtnode/constant@^1.7.11":
+  version "1.7.11"
+  resolved "https://registry.yarnpkg.com/@abtnode/constant/-/constant-1.7.11.tgz#36bba2bf28376bb6afaa93872fb96b5b679677c7"
+  integrity sha512-ah2vaH7rXCby8muwmLRzK8XQJYT8JfpQBmabxHl1NRfyhqmWT9+cKKn+J72J6aQS6hanKS1zoEurezblYCa3NA==
+
 "@abtnode/util@1.7.7":
   version "1.7.7"
   resolved "https://registry.yarnpkg.com/@abtnode/util/-/util-1.7.7.tgz#db64fa8cec49b9f9d960491cb64a3513c40a05a8"

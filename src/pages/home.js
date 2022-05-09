@@ -40,7 +40,7 @@ const Home = () => {
       </div>
       <div style={{ marginTop: 16 }}>
         <Button variant="outlined" color="primary" onClick={() => setConnect4(true)}>
-          get data
+          get passport data
         </Button>
       </div>
       <DidConnect
@@ -88,13 +88,13 @@ const Home = () => {
       <DidConnect
         popup
         open={connect4}
-        action="get-data"
+        action="get-passport-data"
         checkFn={api.get}
         onClose={() => setConnect4(false)}
         onSuccess={getResponseData}
         messages={{
-          title: 'Get Data',
-          scan: 'Get the data returned by the wallet scan',
+          title: 'Select passport and get data',
+          scan: 'Get passport data',
           confirm: 'confirm',
           success: 'success',
         }}
