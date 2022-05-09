@@ -6,6 +6,7 @@ const express = require('express');
 const compression = require('compression');
 const cookieParser = require('cookie-parser');
 const fallback = require('express-history-api-fallback');
+const { VC_TYPE_NODE_PASSPORT } = require('@abtnode/constant');
 
 // const Notification = require('@blocklet/sdk/service/notification');
 
@@ -54,6 +55,35 @@ noConnectHandlers.attach({
     }),
   },
   onAuth: async () => {},
+});
+
+noConnectHandlers.attach({
+  app,
+  action: 'get-passport-data',
+  claims: {
+    profile: () => ({
+      fields: ['fullName'],
+      description: 'abc',
+    }),
+  },
+  onAuth: async ({ updateSession, claims }) => {
+    updateSession({
+      thisIsCustomData: {
+        desc: 'Customizable key and value',
+        claims,
+      },
+    });
+  },
+  onConnect: async () => {
+    return {
+      verifiableCredential: {
+        description: 'cdef',
+        optional: true, // Is it mandatory to provide a passport
+        item: [VC_TYPE_NODE_PASSPORT], // Specify blocklet server vc type
+        // trustedIssuers: undefined, // Specify which issuer, not pass as unrestricted issuer
+      },
+    };
+  },
 });
 
 const router = express.Router();
