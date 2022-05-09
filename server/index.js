@@ -69,7 +69,7 @@ noConnectHandlers.attach({
   onAuth: async ({ updateSession, claims }) => {
     updateSession({
       thisIsCustomData: {
-        sesc: 'Customizable key and value',
+        desc: 'Customizable key and value',
         claims,
       },
     });
