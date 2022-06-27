@@ -1,5 +1,5 @@
 name: connect-demo
-version: 1.0.12
+version: 1.0.13
 title: connect-demo
 description: Blocklet that demos capabilities of DID Connect
 keywords:
@@ -14,7 +14,7 @@ author:
 repository:
   type: git
   url: git+https://github.com/blocklet/create-blocklet.git
-specVersion: 1.2.4
+specVersion: 1.2.7
 logo: logo.png
 files:
   - build
@@ -34,6 +34,15 @@ interfaces:
       - name: '@abtnode/auth-service'
         config:
           blockUnauthenticated: false
+          whoCanAccess: all
+          profileFields:
+            - fullName
+            - email
+            - avatar
+          allowSwitchProfile: true
+          webWalletUrl: https://web.abtwallet.io
+          ignoreUrls: []
+          blockUnauthorized: false
 community: ''
 documentation: ''
 homepage: ''

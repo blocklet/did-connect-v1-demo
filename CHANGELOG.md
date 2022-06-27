@@ -1,3 +1,8 @@
+## 1.0.13 (June 27, 2022)
+
+- fix: resize the logo
+- [skip ci] Update README.md
+
 ## 1.0.12 (五月 09, 2022)
 
 - feat: add version-check and template
