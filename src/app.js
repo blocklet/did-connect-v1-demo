@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 're
 import { SessionProvider } from './contexts/session';
 
 import './app.css';
+import ThemeProvider from './libs/theme';
 import Home from './pages/home';
 import About from './pages/about';
 
@@ -12,14 +13,16 @@ const apiPrefix = window?.blocklet?.prefix || '/';
 
 function App() {
   return (
-    <div className="app">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/home" component={Home} />
-        <Redirect to="/" />
-      </Switch>
-    </div>
+    <ThemeProvider>
+      <div className="app">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/home" component={Home} />
+          <Redirect to="/" />
+        </Switch>
+      </div>
+    </ThemeProvider>
   );
 }
 
