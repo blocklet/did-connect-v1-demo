@@ -1,3 +1,7 @@
+## 1.1.0 (July 20, 2022)
+
+- chore: update deps
+
 ## 1.0.13 (June 27, 2022)
 
 - fix: resize the logo
