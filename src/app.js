@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ThemeProvider } from '@arcblock/ux/lib/Theme';
 
 import { SessionProvider } from './contexts/session';
 
 import './app.css';
-import ThemeProvider from './libs/theme';
 import Home from './pages/home';
 import About from './pages/about';
 
@@ -15,24 +15,22 @@ function App() {
   return (
     <ThemeProvider>
       <div className="app">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/home" component={Home} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/home" element={<Home />} />
+          <Route element={<Navigate to="/" />} />
+        </Routes>
       </div>
     </ThemeProvider>
   );
 }
 
-const WrappedApp = withRouter(App);
-
 export default () => {
   return (
     <SessionProvider serviceHost={apiPrefix}>
       <Router basename={apiPrefix}>
-        <WrappedApp />
+        <App />
       </Router>
     </SessionProvider>
   );
