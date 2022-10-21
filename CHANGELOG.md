@@ -1,3 +1,7 @@
+## 1.2.1 (October 21, 2022)
+
+- chore: update deps to latest
+
 ## 1.2.0 (July 20, 2022)
 
 - fix: session manager style issue
