@@ -2198,30 +2198,12 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@nedb/binary-search-tree@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@nedb/binary-search-tree/-/binary-search-tree-2.0.4.tgz#d5bacee6a5038c189ae5fb4ebb8a5c3b05e78b62"
-  integrity sha512-CqrOltK53ZR5jOBuZ7/KxtYO8QwR6tXojSEyw9Jmoq4ecZ//8S0iakwZCb7o6dCz5tGQnRDp8klNh11T8jJOxg==
-
 "@nedb/binary-search-tree@2.0.5":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@nedb/binary-search-tree/-/binary-search-tree-2.0.5.tgz#17f2d6e30989aed11e713711a43dd7c8a8163db4"
   integrity sha512-zjCn1xjlmlP51yKA9XEzxWtvaWieqe2j2G6ap2zxUF0VfJMrCo21WjYl0GJcX5sLiWkBr69AXJLQTWN2KGqaAA==
 
-"@nedb/core@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@nedb/core/-/core-2.0.4.tgz#73c8a5f24dbe1a9d1aa61dcb86c2d824e4daed30"
-  integrity sha512-UlODy/I0WSgY5/eIjIRdopqgJKlUsUPHacxZqszRxRWxp1npi44yberP4cb8N4BmZP6nlTtSZaRpI+C9xX5jqg==
-  dependencies:
-    "@nedb/binary-search-tree" "2.0.4"
-    async "^3.2.4"
-    debug "^4.3.4"
-    localforage "^1.10.0"
-    mkdirp "^1.0.4"
-    node-line-reader "0.0.3"
-    standard-as-callback "^2.1.0"
-
-"@nedb/core@2.x", "@nedb/core@^2.0.5":
+"@nedb/core@2.0.5", "@nedb/core@2.x", "@nedb/core@^2.0.5":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@nedb/core/-/core-2.0.5.tgz#9862d9c988c2fd54a8e7a63d83b1b457e606a23f"
   integrity sha512-MOXAyUpGWHzD8+pT4gOXd1cZCoIFaWHtzC/NEUxA/xbN95tHVEXTyDFir4FmT+C4hG9UkE4xkEF3L016lzth4g==
@@ -2235,11 +2217,11 @@
     standard-as-callback "^2.1.0"
 
 "@nedb/multi@2.x":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@nedb/multi/-/multi-2.0.4.tgz#c9b51fba90ab9a3e9f9cd85e5f7da0401a36febd"
-  integrity sha512-EVyFew3Mm0GYtyTEZ9/iFX9GmwpZRfTKj5fjfTjvuvpeZacdBum5VA4DqQzVlRUBSrpHgW7LdGrMMJ9zIn4k8g==
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@nedb/multi/-/multi-2.0.5.tgz#b8cc598a8b86d1939e9735dc281a7e7c70050cbd"
+  integrity sha512-dBhnNp8hXHyGFX3WboXOIMs7AegduGfnP/781eX3tlmKqTdU/cTNVD38iOakDO+Fym/5SbJddu1gPxEfU/7J6w==
   dependencies:
-    "@nedb/core" "2.0.4"
+    "@nedb/core" "2.0.5"
     axon "^2.0.3"
     errio "^1.2.2"
     standard-as-callback "^2.1.0"
@@ -5853,8 +5835,8 @@ entities@^2.0.0:
 
 errio@^1.2.2:
   version "1.2.2"
-  resolved "https://registry.npmjs.org/errio/-/errio-1.2.2.tgz#2430afa66fa6dc363db588c3d83c4407a85d0255"
-  integrity sha1-JDCvpm+m3DY9tYjD2DxEB6hdAlU=
+  resolved "https://registry.yarnpkg.com/errio/-/errio-1.2.2.tgz#2430afa66fa6dc363db588c3d83c4407a85d0255"
+  integrity sha512-Le3X3pR2h4qtAJXFyOEfMf9xsfy6v3Lb7Xbpf1/Wyux0lZfV6+vNoWWiqNjdCFrzrj+esQ2HwdK1/KkdgzrbKg==
 
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.8"

@@ -1,3 +1,7 @@
+## 1.2.2 (October 30, 2022)
+
+- [skip ci] Update README.md
+
 ## 1.2.1 (October 21, 2022)
 
 - chore: update deps to latest
