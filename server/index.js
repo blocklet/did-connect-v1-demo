@@ -30,7 +30,7 @@ handlers.attach({
       description: 'abc',
     }),
   },
-  onAuth: async () => {},
+  onAuth: async () => { },
 });
 
 connectDidOnlyHandlers.attach({
@@ -42,7 +42,7 @@ connectDidOnlyHandlers.attach({
       description: 'abc',
     }),
   },
-  onAuth: async () => {},
+  onAuth: async () => { },
 });
 
 noConnectHandlers.attach({
@@ -54,7 +54,7 @@ noConnectHandlers.attach({
       description: 'abc',
     }),
   },
-  onAuth: async () => {},
+  onAuth: async () => { },
 });
 
 noConnectHandlers.attach({
@@ -83,6 +83,22 @@ noConnectHandlers.attach({
         // trustedIssuers: undefined, // Specify which issuer, not pass as unrestricted issuer
       },
     };
+  },
+});
+
+noConnectHandlers.attach({
+  app,
+  action: 'force-did',
+  claims: {
+    profile: () => ({
+      fields: ['fullName'],
+      description: 'abc',
+    }),
+  },
+  onAuth: async ({ userDid }) => {
+    if (userDid !== 'z1mDA4HBF4YnES3J3qud48XTeAswDjfDTHx') {
+      throw new Error('Only z1mDA4HBF4YnES3J3qud48XTeAswDjfDTHx can access this page');
+    }
   },
 });
 

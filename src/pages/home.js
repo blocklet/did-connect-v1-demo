@@ -7,11 +7,14 @@ import { useSessionContext } from '../contexts/session';
 
 import api from '../libs/api';
 
+const expectedDid = 'z1mDA4HBF4YnES3J3qud48XTeAswDjfDTHx';
+
 const Home = () => {
   const [connect1, setConnect1] = useState(false);
   const [connect2, setConnect2] = useState(false);
   const [connect3, setConnect3] = useState(false);
   const [connect4, setConnect4] = useState(false);
+  const [connect5, setConnect5] = useState(false);
   const { session } = useSessionContext();
 
   const getResponseData = (data) => {
@@ -41,6 +44,11 @@ const Home = () => {
       <div style={{ marginTop: 16 }}>
         <Button variant="outlined" color="primary" onClick={() => setConnect4(true)}>
           get passport data
+        </Button>
+      </div>
+      <div style={{ marginTop: 16 }}>
+        <Button variant="outlined" color="primary" onClick={() => setConnect5(true)}>
+          Force account: {expectedDid}
         </Button>
       </div>
       <DidConnect
@@ -95,6 +103,21 @@ const Home = () => {
         messages={{
           title: 'Select passport and get data',
           scan: 'Get passport data',
+          confirm: 'confirm',
+          success: 'success',
+        }}
+      />
+      <DidConnect
+        popup
+        open={connect5}
+        action="force-did"
+        checkFn={api.get}
+        forceConnected={expectedDid}
+        onClose={() => setConnect5(false)}
+        onSuccess={getResponseData}
+        messages={{
+          title: 'Prove DID Ownership',
+          scan: `Prove ownership for did ${expectedDid}`,
           confirm: 'confirm',
           success: 'success',
         }}
