@@ -1,5 +1,5 @@
 name: connect-demo
-version: 1.2.2
+version: 1.2.3
 title: DID Connect Demo
 description: Blocklet that demos capabilities of DID Connect V1
 keywords:
@@ -9,12 +9,13 @@ group: dapp
 did: z8iZucRA3xDghCnKyBCVoHYdhSU7owVukT4QZ
 main: server/index.js
 author:
-  name: zhanghan
-  email: zhanghan@arcblock.io
+  name: ArcBlock
+  email: blocklet@arcblock.io
+  url: https://github.com/blocklet
 repository:
   type: git
   url: git+https://github.com/blocklet/create-blocklet.git
-specVersion: 1.2.7
+specVersion: 1.2.8
 logo: logo.png
 files:
   - build
@@ -40,11 +41,10 @@ interfaces:
             - email
             - avatar
           allowSwitchProfile: true
-          webWalletUrl: https://web.abtwallet.io
           ignoreUrls: []
           blockUnauthorized: false
-community: ''
-documentation: ''
+community: https://community.arcblock.io
+documentation: https://developer.blocklet.io
 homepage: ''
 license: ''
 payment:
@@ -74,5 +74,6 @@ environments:
 capabilities:
   clusterMode: false
   component: true
+  navigation: true
 screenshots: []
 components: []

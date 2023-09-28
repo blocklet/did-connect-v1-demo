@@ -1,3 +1,7 @@
+## 1.2.3 (September 28, 2023)
+
+- chore: update blocklet.yml
+
 ## 1.2.2 (October 30, 2022)
 
 - [skip ci] Update README.md
